@@ -31,6 +31,8 @@ app.get("*", (req, res) => {
 });
 
 app.listen(process.env.PORT, () => {
-  console.log(`Connection: ${process.env.DB_CNN}`);
+  console.log(`DB: ${process.env.DB_CNN}`);
+  console.log(`PUERTO: ${process.env.PORT}`);
+  console.log(`SEMILLA: ${process.env.SECRET_JWT_SEED}`);
   console.log(`Servidor corriendo en puerto ${process.env.PORT}`);
 });
